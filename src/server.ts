@@ -11,6 +11,7 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.use(express.static('public'));
+app.use('/script', express.static('dist'));
 
 app.listen(port, () => {
   console.log(`server listening on http://localhost:${port}`);

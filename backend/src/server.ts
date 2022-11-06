@@ -6,10 +6,10 @@ const app: Express = express();
 const port = process.env.PORT;
 
 app.get('/', (req: Request, res: Response) => {
-  res.redirect('index.html');
+  res.redirect('static/index.html');
 });
 
-app.use(express.static('../frontend/public'));
+app.use('/static', express.static('../frontend/public'));
 app.use('/script', express.static('../frontend/dist'));
 
 app.listen(port, () => {

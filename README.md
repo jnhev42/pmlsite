@@ -1,0 +1,2 @@
+### Setup
+- install `npm` & `nvm`

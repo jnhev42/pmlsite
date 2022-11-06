@@ -7,8 +7,10 @@ const app: Express = express();
 const port = process.env.PORT;
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Hello PML');
+  res.redirect('index.html');
 });
+
+app.use(express.static('public'));
 
 app.listen(port, () => {
   console.log(`server listening on http://localhost:${port}`);

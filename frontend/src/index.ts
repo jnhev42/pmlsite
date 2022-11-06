@@ -1,2 +1,2 @@
-import sayhello from "./sayhello";
-sayhello("me");
+import sayhello from "./sayhello.js";
+sayhello("you");
